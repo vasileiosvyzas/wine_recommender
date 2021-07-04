@@ -1,0 +1,35 @@
+Spice Categories
+Basil, Mint, Cilantro, Shiso, Chervil
+ highly aromatic fresh green, citrus, and minty herbs
+
+Sage, Rosemary, Lavender, Fir
+ Dried resinous floral herbs
+
+Oregano, Thyme, Marjoram, Tarragon, Bay Leaf, Parsley, Dill
+ Pungent earthy green herbs
+
+Garlic, Shallot, Chive, Leek, Onion
+ Umami-rich, pungent, sulfury alliums
+
+Coriander, Cumin, Caraway
+ Savory, umami-rich brown spices
+
+Mustard, Horseradish, Szechuan Pepper, Wasabi
+ Sharp, clean piquant (spicy) spices
+
+Cinnamon, Allspice, Vanilla, Clove, Fenugreek, Nutmeg, Mace
+ Sweet, brown, baking spices
+
+Anise, Licorice, Star Anise, Black Cardamom, Fennel
+ Aromatic, terpene-dominant, incense spices
+
+Red, White, Pink and Black Pepper
+ Piquant (spicy), umami-rich, rotundone-dominant spices
+
+Red pepper, Paprika, Cayenne Pepper, Ancho Pepper, Aleppo Pepper
+ Piquant (spicy), smoky red pepper
+
+Ginger, Galangal, Turmeric, Green Cardamon
+ Perfumed, sharp, citrus-like spices
+
+ butter, vanilla, clove, bacon

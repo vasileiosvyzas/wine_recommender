@@ -1,0 +1,105 @@
+flavours_and_spices
+Blackberry
+currant
+Plum
+cherry
+Raspberry
+Prune
+Fig
+Raisin
+Pomegranate
+Strawberry
+Dragon Fruit
+Candied Cherries
+Apricot
+Peach
+Nectarine
+Apple
+Pear
+Orange
+Grapefruit
+Passion fruit
+Lemon
+Lemon Zest
+Lime
+Lime Zest
+Basil
+Mint
+Chervil
+Sage
+Rosemary
+Lavender
+Fir
+Oregano
+Thyme
+Marjoram
+Tarragon
+Bay Leaf
+Parsley
+Dill
+Garlic
+Shallot
+chive
+Leek
+Onion
+Coriander
+Cumin
+Caraway
+Mustard
+Horseradish
+Vanilla
+Clove
+Nutmeg
+Mace
+Star Anise
+pepper
+Paprika
+Ginger
+Turmeric
+Cardamon
+butter
+clove
+
+citrus
+chocolate
+orange
+licorice
+coffee
+melon
+honey
+pineapple
+jam
+almond
+cranberry
+blueberry
+cinnamon
+mocha
+grape
+caramel
+black tea
+mango
+sour
+berries
+coconut
+olive
+bacon
+banana
+butterscotch
+mousse
+ginger
+nutmeg
+lychee
+bread
+rhubarb
+jasmine
+liqueur
+truffle
+balsamic
+hazelnut
+quince
+fennel
+watermelon
+root beer
+custard
+guava
+marmalade
