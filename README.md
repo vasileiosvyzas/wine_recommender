@@ -17,6 +17,7 @@ The architecture of the system will consist of three components:
 
 
 Endpoints of the service:
+
 	- http://[hostname]/findmywine/api/v1.0/wines
 	
 	- http://[hostname]/findmywine/api/v1.0/wines/[wine_id]
