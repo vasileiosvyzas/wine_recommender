@@ -1,6 +1,4 @@
 # Find my wine
-Quick and dirty recommender system for wines and beers
-
 This app is a simple content based recommender system for wines and beers. It has the following functionality:
 	- Uses Elasticsearch to provide search functionality for the user to look for wines based on flavour notes
 	- recommendation functionality. When the user selects a wine, the system provides a recommendation for similar wines based on the description of the wine by the sommeliers.The recommendation uses cosine similarity and TFIDF to search wines on the corpus and a Word2Vec model to find the semantically similar wines.
