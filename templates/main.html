@@ -1,0 +1,45 @@
+<h1>Find my wine Home</h1>
+
+<div class="container" style="width:500px;">
+                <h3 align="center">Please choose your flavour preferences</h3>
+                <div>
+                     <label>Enter flavours i.e. plum, apple, pear, peach</label>
+                     <input type="text" name="country" id="country" ng-model="country" ng-keyup="complete(country)" class="form-control" />
+                     <ul class="list-group" ng-model="hidethis" ng-hide="hidethis">
+                          <li class="list-group-item" ng-repeat="countrydata in filterCountry" ng-click="fillTextbox(countrydata)">{{countrydata}}</li>
+                     </ul>
+                </div>
+</div>
+
+<!--<div style="margin-top: 60px;">-->
+    <!--<div>-->
+        <!--<fieldset>-->
+            <!--<legend>Choose your interests</legend>-->
+            <!--<ul class="checkbox-grid">-->
+                <!--<li ng-repeat="fruitName in fruits">-->
+                    <!--<input type="checkbox" name="selectedFruits[]" value="{{fruitName}}" ng-checked="selection.indexOf(fruitName) > -1" ng-click="toggleSelection(fruitName)"> {{fruitName}}</label>-->
+                    <!--&lt;!&ndash;<input type="checkbox" ng-model="flavor.selected" ng-change="save()" value={{flavor.name}} /> {{flavor.name}}&ndash;&gt;-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</fieldset>-->
+  <!--</div>-->
+<!--</div>-->
+
+<div class="clearfix"></div>
+
+<table id="list_of_beers" class="table table-striped table-condensed" style="margin-top: 60px;">
+    <thead>
+    <tr>
+        <th style="min-width: 80px;">Title</th>
+        <th style="min-width: 80px;">Country</th>
+        <th style="min-width: 80px;">Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="result in results">
+        <td><a href="#/wines/{{result.id}}">{{ result.title }}</a></td>
+        <td>{{ result.country }}</td>
+        <td>{{ result.price }}</td>
+    </tr>
+    </tbody>
+</table>
