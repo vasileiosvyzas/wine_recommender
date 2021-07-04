@@ -1,4 +1,4 @@
-# wine_recommender
+# Find my wine
 Quick and dirty recommender system for wines and beers
 
 This app is a simple content based recommender system for wines and beers. It has the following functionality:
