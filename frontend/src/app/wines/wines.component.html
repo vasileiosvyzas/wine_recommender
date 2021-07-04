@@ -1,0 +1,26 @@
+<h1>Find my wine Home</h1>
+
+<div>
+    <span class="col-md-6 col-md-offset-3">
+    <input #searchBox id="search-box" (keyup)="search(searchBox.value)" class="f-input s-filter-input" autocomplete="off" name="tagfilter" type="text" placeholder="Filter by country name or flavours" autofocus=""/>
+    </span>
+</div>
+<p></p>
+<div class="clearfix"></div>
+
+<div>
+<ul>
+    <li *ngFor="let wine of wines$">
+        <a routerLink="/wines/{{wine.id}}"> {{ wine.title }}</a>
+
+        <ul>
+            <li>
+                {{wine.country}}
+            </li>
+            <li>
+                {{wine.price}}
+            </li>
+        </ul>
+    </li>
+</ul>
+</div>

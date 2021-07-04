@@ -1,0 +1,40 @@
+<div id="">
+	<h1>Flavours</h1>
+	<p>Wines have different combinations of flavours and spices that make it unique. Here you can find a wine by choosing your preference in spices and fruits.</p>
+
+	<mat-form-field class="example-chip-list">
+	  <mat-chip-list #chipList>
+	    <mat-chip *ngFor="let fruit of fruits" [selectable]="selectable"
+	             [removable]="removable" (removed)="remove(fruit)">
+	      {{fruit.name}}
+	      <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+	    </mat-chip>
+	    <input #searchbox
+	    	(keyup.enter) = "getSelectedValues()" 
+	    	[matChipInputFor]="chipList"
+	        [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+           	[matChipInputAddOnBlur]="addOnBlur"
+           	(matChipInputTokenEnd)="add($event)" class="f-input s-filter-input" autocomplete="off" name="tagfilter" type="text" maxlength="35" placeholder="Filter by tag name" autofocus="">
+	    <button mat-button (click)="search()">
+	      <mat-icon>search</mat-icon>
+	    </button>
+	  </mat-chip-list>
+	</mat-form-field>
+	<p></p>
+	<mat-chip-list [selectable]="true" [multiple]="true"  >
+	  <mat-chip  *ngFor="let chip of availableColors" [selectable]="true" (click)='selectMe(chip)' >{{chip}}</mat-chip>
+	</mat-chip-list>
+
+	<p></p>
+	<div *ngIf="flavors$; else standardList">
+		<mat-chip-list>
+			<mat-chip *ngFor="let chip of flavors$.flavor_combinations" [selectable]="selectable"> {{chip}}</mat-chip>
+		</mat-chip-list>
+	</div>
+
+	<ng-template #standardList>
+		<mat-chip-list>
+			<mat-chip *ngFor="let chip of availableColors" [selectable]="selectable"> {{chip}}</mat-chip>
+		</mat-chip-list>
+	</ng-template>
+</div>

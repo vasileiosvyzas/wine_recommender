@@ -1,0 +1,53 @@
+<h1>{{ wine$.wine.title }}</h1>
+
+<ul>
+	<li><strong>Name:</strong> {{ wine$.wine.title }}</li>
+	<li><strong>Country:</strong> {{ wine$.wine.country  }}</li>
+	<li><strong>Description:</strong> {{ wine$.wine.description }}</li>
+	<li><strong>Region:</strong> {{ wine$.wine.region_1 }}</li>
+	<li><strong>Winery:</strong> {{ wine$.wine.winery }}</li>
+	<li><strong>Province:</strong> {{ wine$.wine.province }}</li>
+	<li><strong>Variety:</strong> {{ wine$.wine.variety }}</li>
+	<li><strong>Rating:</strong> {{ wine$.wine.Rating }}</li>
+	<li><strong>Price:</strong> {{ wine$.wine.price }}</li>
+</ul>
+
+<h1>See similar wines</h1>
+<table id="list_of_beers" class="table table-striped table-condensed" style="margin-top: 60px;">
+    <thead>
+    <tr>
+        <th style="min-width: 80px;">Title</th>
+        <th style="min-width: 80px;">Country</th>
+        <th style="min-width: 80px;">Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let similar_wine of wine$.similar_wines">
+        <td><a href="#/wines/{{similar_wine.id}}">{{ similar_wine.title }}</a></td>
+        <td>{{ similar_wine.country }}</td>
+        <td>{{ similar_wine.price }}</td>
+    </tr>
+    </tbody>
+</table>
+
+<table id="list_of_wine_from_same_region" class="table table-striped table-condensed" style="margin-top: 60px;">
+    <h1>Wines from the same winery</h1>
+    <thead>
+    <tr>
+        <th style="min-width: 80px;">Title</th>
+        <th style="min-width: 80px;">Country</th>
+        <th style="min-width: 80px;">Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let regional_wine of wine$.regional_wines">
+        <td><a href="#/wines/{{regional_wine.id}}">{{ regional_wine.title }}</a></td>
+        <td>{{ regional_wine.country }}</td>
+        <td>{{ regional_wine.price }}</td>
+    </tr>
+    </tbody>
+</table>
+
+<div class="clearfix"></div>
+<a href="#/" class="btn btn-small btn-primary">Go to Search</a>
+<a href="#/newBeer" class="btn btn-small btn-primary">Interested in similar beers?</a>
