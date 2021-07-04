@@ -8,13 +8,17 @@ This app is a simple content based recommender system for wines and beers. It ha
 
 ## Architecture
 The architecture of the system will consist of three components:
+
     • Elasticsearch: used as data storage and for its search capabilities.
+    
     • Python/Flask Microservice: the backend component that has access to Elasticsearch and provides a RESTful API for the frontend.
+    
     • AngularJS UI: the frontend that requests data to the backend microservice.
 
 
 Endpoints of the service:
 	- http://[hostname]/findmywine/api/v1.0/wines
+	
 	- http://[hostname]/findmywine/api/v1.0/wines/[wine_id]
 
 
