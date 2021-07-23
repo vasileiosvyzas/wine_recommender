@@ -3,7 +3,7 @@ This app is a simple content based recommender system for wines and beers and it
 
 	- Uses Elasticsearch to provide search as you type functionality for the user to look for wines based on flavour notes
 	
-	- recommendation functionality which uses an Latent Semantic Indexing model that is build on a corpus of TF-IDF documents and it computes cosine similarities between the documents in the corpus and the query document
+	- recommendation functionality which uses an Latent Semantic Indexing model that is build on a corpus of TF-IDF documents and it computes cosine similarities between the documents in the LSI space
 
 
 ## Architecture
